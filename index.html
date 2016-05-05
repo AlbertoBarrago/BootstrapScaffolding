@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="albertobarrago">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>EveSite</title>
 
@@ -22,28 +23,38 @@
     <![endif]-->
   </head>
   <body>
+
+  <div class="flowtime ft-cross">
+  <div class="ft-section" data-id="section-1">
+      <div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Cross Direction Demo">
+        <div class="stack-center">
+          <div class="stacked-center">
+            <a href="#/section-1/page-2"><img src="../assets/images//logo-white-shadow.png"></a>
+            <p class="page-title">yaeh work it <a href="https://twitter.com/marcolago" target="_blank">@albz</a></p>
+            <p>Press <strong>Down Key</strong> to continue<br>
+              Or <strong>Swipe Up</strong> if you prefer.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="ft-section" data-id="section-2">
+      <div id="/section-2/page-1" class="ft-page" data-id="page-1">
+        <h1>Mastering the Navigation</h1>
+        <p>You can navigate in many ways. The most common way is using the keyboard.</p>
+        <h3>Navigation Keys and default behaviours:</h3>
+        <ul>
+          <li><strong>Down Key</strong> goes to the next page or shows up the next fragment (we’ll see this later).</li>
+          <li><strong>Up Key</strong> goes to the previous page or hides the fragment.</li>
+          <li><strong>Right Key</strong> goes to the adjacent page in the next section <span class="small">(if available, it’s like a grid, otherwise it goes to the last page in the next section).</span></li>
+          <li><strong>Left Key</strong> goes to the adjacent page in the previous section.</li>
+        </ul>
+      </div>
+
+
+  </div>
     
-    <div class="flowtime">
-      <div class="ft-section" data-id="section-1">
-        <div class="ft-page" data-id="page-1">
-            <h1>Heading Title</h1>
-            When navigating to this page the title will be "site name | Heading Title"
-            and the URL will be "http://site_URL/#/section-1/page-1/"
-        </div>
-      </div>
-      <div class="ft-section" data-title="Section 2 Title" data-id="section-2">
-        <div class="ft-page" data-title="Page 1 Title" data-id="page-1">
-            When navigating to this page the title will be "site name | Section 2 Title | Page 1 Title"
-            and the URL will be "http://site_URL/#/section-2/page-1/"
-        </div>
-      </div>
-      <div class="ft-section"data-id="section-3">
-        <div class="ft-page" data-title="Page Title" data-id="page-1">
-            When navigating to this page the title will be "site name | Page Title"
-            and the URL will be "http://site_URL/#/section-3/page-1/"
-        </div>
-      </div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
