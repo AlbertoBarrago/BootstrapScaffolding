@@ -1,0 +1,1 @@
+$(document).ready(function(){var t;t.start()});

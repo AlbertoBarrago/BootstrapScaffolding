@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
     <link href="dist/css/custom.css" rel="stylesheet">
+    <link href="dist/css/flowtime.css" rel="stylesheet">
+    <link href="dist/css/default.css" rel="stylesheet">
+    <link href="dist/css/standard-ol.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,17 +23,34 @@
   </head>
   <body>
     
-    <div class="container">
-      <div class="col-md-12">
-        <h1>Hello, world!</h1>
-        <h5>The project is started</h5>
-    </div>
+    <div class="flowtime">
+      <div class="ft-section" data-id="section-1">
+        <div class="ft-page" data-id="page-1">
+            <h1>Heading Title</h1>
+            When navigating to this page the title will be "site name | Heading Title"
+            and the URL will be "http://site_URL/#/section-1/page-1/"
+        </div>
+      </div>
+      <div class="ft-section" data-title="Section 2 Title" data-id="section-2">
+        <div class="ft-page" data-title="Page 1 Title" data-id="page-1">
+            When navigating to this page the title will be "site name | Section 2 Title | Page 1 Title"
+            and the URL will be "http://site_URL/#/section-2/page-1/"
+        </div>
+      </div>
+      <div class="ft-section"data-id="section-3">
+        <div class="ft-page" data-title="Page Title" data-id="page-1">
+            When navigating to this page the title will be "site name | Page Title"
+            and the URL will be "http://site_URL/#/section-3/page-1/"
+        </div>
+      </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="dist/js/bootstrap-min.js"></script>
-
+    <script src="dist/js/brav1toolbox.js"></script>
+    <script src="dist/js/flowtime.min.js"></script>
+    <script type="dist/js/custom-min.js"></script>
   </body>
 </html>
