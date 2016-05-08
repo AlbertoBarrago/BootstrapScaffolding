@@ -1,8 +1,45 @@
-h1 {
-	color:red;
+.custom_class {
+	
 	text-align: center;
+
+	h1 {
+		color: black;
+		top: 30px;
+		position: relative;
+		opacity: 0;
+	}
+
+	h5 {
+		color: red;
+		top: -10px;
+		opacity: 0;
+		position: relative;
+		opacity: 0;
+	}
+
+	h3 {
+		position: relative;
+		top: 140px;
+		opacity: 0;
+	}
+
+	img {
+		margin: 0 auto;
+		display: block;
+		opacity: 0;
+
+	}
 }
 
-h5 {
-	text-align: center;
+.flowtime ol {
+  counter-reset: none;
+  list-style: decimal;
+}
+
+.flowtime li {
+  display: list-item;
+}
+
+.flowtime ol li:before {
+  content: "";
 }

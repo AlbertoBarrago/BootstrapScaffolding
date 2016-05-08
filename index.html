@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,10 +10,9 @@
 
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
-    <link href="dist/css/custom.css" rel="stylesheet">
     <link href="dist/css/flowtime.css" rel="stylesheet">
     <link href="dist/css/default.css" rel="stylesheet">
-    <link href="dist/css/standard-ol.css" rel="stylesheet">
+    <link href="dist/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,44 +23,119 @@
   </head>
   <body>
 
+  <!-- 
+  
+  -> Colonne | data-id = section-n++
+
+  <div class="ft-section" data-id="section-n"> 
+  </div> 
+
+  -->
+  
+  <!--  
+  
+   -> Riga | data-id >> id=/[section-name/page-n++]
+
+   <div id="/section-n/page-n" class="ft-page" data-id="page-n" data-title="insert-title">    
+   </div> 
+
+   -->
   <div class="flowtime ft-cross">
+  
   <div class="ft-section" data-id="section-1">
-      <div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Cross Direction Demo">
-        <div class="stack-center">
-          <div class="stacked-center">
-            <a href="#/section-1/page-2"><img src="../assets/images//logo-white-shadow.png"></a>
-            <p class="page-title">yaeh work it <a href="https://twitter.com/marcolago" target="_blank">@albz</a></p>
-            <p>Press <strong>Down Key</strong> to continue<br>
-              Or <strong>Swipe Up</strong> if you prefer.</p>
-          </div>
-        </div>
+
+    <div id="/section-1/page-1" class="ft-page custom_class" data-id="page-1" data-title="Intro">
+      
+      <div class="row" id="custom_row">
+        <h1>Hello Ken</h1>
+        <h5>This is an Animation</h5>
+        <img src="http://vignette1.wikia.nocookie.net/hokuto/images/8/89/Kenshiro_(Hokuto_Musou_gensakuban).jpg/revision/latest?cb=20100601054944" alt="kenShiro">
+
+        <h3>By albz</h3>
       </div>
+
+    </div>
+
+    <div id="/section-1/page-2" class="ft-page" data-id="page-2" data-title="insert-title-here">
+      
+    </div>
+
+    <div id="/section-1/page-3" class="ft-page" data-id="page-3" data-title="insert-title-here">
+        
+    </div>
+
+     <div id="/section-1/page-4" class="ft-page" data-id="page-4" data-title="insert-title-here">
+        
+    </div>
 
   </div>
 
-  <div class="ft-section" data-id="section-2">
-      <div id="/section-2/page-1" class="ft-page" data-id="page-1">
-        <h1>Mastering the Navigation</h1>
-        <p>You can navigate in many ways. The most common way is using the keyboard.</p>
-        <h3>Navigation Keys and default behaviours:</h3>
-        <ul>
-          <li><strong>Down Key</strong> goes to the next page or shows up the next fragment (we’ll see this later).</li>
-          <li><strong>Up Key</strong> goes to the previous page or hides the fragment.</li>
-          <li><strong>Right Key</strong> goes to the adjacent page in the next section <span class="small">(if available, it’s like a grid, otherwise it goes to the last page in the next section).</span></li>
-          <li><strong>Left Key</strong> goes to the adjacent page in the previous section.</li>
-        </ul>
-      </div>
+  <div class="ft-section" data-id="section-2"> 
+    <div id="/section-2/page-1" class="ft-page" data-id="page-1" data-title="insert-title-here">
+       
+    </div>
 
+    <div id="/section-2/page-2" class="ft-page" data-id="page-2" data-title="insert-title-here">
+       
+    </div>
+
+    <div id="/section-2/page-3" class="ft-page" data-id="page-3" data-title="insert-title-here">
+       
+    </div>
+  </div>
+
+  <div class="ft-section" data-id="section-3"> 
+    <div id="/section-3/page-1" class="ft-page" data-id="page-1" data-title="insert-title-here">
+       
+    </div>
+
+    <div id="/section-3/page-2" class="ft-page" data-id="page-2" data-title="insert-title-here">
+       
+    </div>
+
+  </div>
+
+  <div class="ft-section" data-id="section-4"> 
+    <div id="/section-4/page-1" class="ft-page" data-id="page-1" data-title="insert-title-here">
+       
+    </div>
+
+    <div id="/section-4/page-2" class="ft-page" data-id="page-2" data-title="insert-title-here">
+       
+    </div>
 
   </div>
     
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/plugins/CSSPlugin.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="dist/js/bootstrap-min.js"></script>
     <script src="dist/js/brav1toolbox.js"></script>
     <script src="dist/js/flowtime.min.js"></script>
-    <script type="dist/js/custom-min.js"></script>
+    <script src="dist/js/custom-min.js"></script>
+
+    <script>
+    Flowtime.start();
+  
+  // Configuration API test
+    Flowtime.showProgress(true);
+    // Flowtime.fragmentsOnSide(true);
+    // Flowtime.fragmentsOnBack(true);
+    // Flowtime.useHistory(false);
+    // Flowtime.slideInPx(true);
+    // Flowtime.sectionsSlideToTop(true);
+    // Flowtime.backFromPageToTop(true);
+    // Flowtime.gridNavigation(false);
+    // Flowtime.useOverviewVariant(true);
+    Flowtime.parallaxInPx(true);
+    //
+    // event management
+    // Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+    // Flowtime.onNavigation(onNavigation);
+    </script>
+
+
   </body>
 </html>
